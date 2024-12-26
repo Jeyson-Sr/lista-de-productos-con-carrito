@@ -1,0 +1,108 @@
+.confirmacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.492);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+  }
+
+  .order-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    width: 420px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .check-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    text-align: start;
+  }
+
+  .subtitle {
+    color: #666;
+    font-size: 14px;
+    margin: 8px 0 0;
+    text-align: start;
+  }
+
+  .order-items {
+    margin: 24px 0;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .item-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background: #f0f0f0;
+    margin-right: 12px;
+  }
+
+  .item-details {
+    flex: 1;
+  }
+
+  .item-name {
+    font-size: 14px;
+    margin: 0 0 4px;
+  }
+
+  .item-quantity {
+    color: #666;
+    font-size: 12px;
+  }
+
+  .item-price {
+    font-weight: 600;
+  }
+
+  .total {
+    border-top: 1px solid #eee;
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .new-order-btn {
+    background: #ff4b2b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 24px;
+  }
