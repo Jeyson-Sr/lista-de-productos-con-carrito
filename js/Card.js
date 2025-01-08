@@ -1,14 +1,18 @@
-const iconCart =`<img src="assets/images/icon-add-to-cart.svg" class="cart-icon">`
-const iconDecrement =`<img class="icon-decrementar" src="assets/images/icon-decrement-quantity.svg">`
-const iconIncrement =`<img class="icon-incrmentar" src="assets/images/icon-increment-quantity.svg">`
+const iconCart = `<img src="assets/images/icon-add-to-cart.svg" class="cart-icon">`;
+const iconDecrement = `<img class="icon-decrementar" src="assets/images/icon-decrement-quantity.svg">`;
+const iconIncrement = `<img class="icon-incrmentar" src="assets/images/icon-increment-quantity.svg">`;
 
-function Card() {
+
   fetch("data.json")
     .then(function (res) {
       return res.json();
     })
     .then(function (data) {
-      let card = "";
+      Cards(data)
+    });
+
+function Cards(data) {
+  let card = "";
       data.forEach((info) => {
         card += `
             <div class="product-card">
@@ -31,7 +35,7 @@ function Card() {
 
         document.getElementById("lista-productos").innerHTML = card;
       });
-    });
 }
 
-export { Card };
+
+export { Cards };

@@ -1,0 +1,18 @@
+.falseItem {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.img-falseItem {
+  width: 150px;
+}
+
+.txt-falseItem {
+  color: #87635A;
+  text-align: center;
+}

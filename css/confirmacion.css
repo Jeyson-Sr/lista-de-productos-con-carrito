@@ -10,6 +10,8 @@
     top: 0;
     left: 0;
     z-index: 9999999;
+    /*Uso Con js*/
+    display: none;
   }
 
   .order-card {
@@ -51,6 +53,9 @@
 
   .order-items {
     margin: 24px 0;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fffbf2;
   }
 
   .item {
@@ -77,8 +82,12 @@
   }
 
   .item-quantity {
-    color: #666;
+    color: #ff4b2b;
     font-size: 12px;
+  }
+  .item-quantity-price{
+    padding-left: 15px;
+    color: #666;
   }
 
   .item-price {
@@ -98,11 +107,15 @@
     background: #ff4b2b;
     color: white;
     border: none;
-    border-radius: 8px;
-    padding: 16px;
+    border-radius: 30px;
+    padding: 12px 16px;
     width: 100%;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     margin-top: 24px;
+  }
+
+  .new-order-btn:hover{
+    background: #c33921;
   }

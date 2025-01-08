@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="main.css" />
 
-    <title>Frontend Mentor | Product list with cart</title>
+    <title>Product list with cart</title>
   </head>
   <body>
     <div class="contenedor">
@@ -14,73 +14,14 @@
         <h1>Desserts</h1>
       </header>
 
-      <main>
+      <main class="contenedor-productos">
+        <!-- seccion para mostrar los productos -->
         <section class="lista-productos" id="lista-productos"></section>
-
-        <aside class="resumen-carrito">
-          <div class="cart-container">
-            <div class="cart-header">Your Cart (7)</div>
-
-            <div class="cart-item">
-              <div class="item-details">
-                <div class="item-name">Classic Tiramisu</div>
-                <span class="item-quantity">7x</span>
-                <span class="item-price">@ $5.50</span>
-                <span class="item-total">$38.50</span>
-              </div>
-              <div class="remove-button">
-                <img
-                  class="iconremove"
-                  src="assets/images/icon-remove-item.svg"
-                />
-              </div>
-            </div>
-
-            <div class="order-total">
-              <span>Order Total</span>
-              <span>$46.50</span>
-            </div>
-
-            <div class="carbon-neutral">
-              <img
-                src="assets/images/icon-carbon-neutral.svg"
-                alt="carbon neutral"
-              />
-              <span>This is a carbon-neutral delivery</span>
-            </div>
-
-            <button class="confirm-button">Confirm Order</button>
-          </div>
-        </aside>
+        <!-- mostras la lista del carrito -->
+        <section class="resumen-carrito" id="resumen-carrito"></section>
       </main>
-    </div>
-
-    <div class="confirmacion">
-      <div class="order-card">
-        <div class="header">
-          <div class="check-icon"><img width="100%" src="assets/images/icon-order-confirmed.svg" alt=""></div>
-          <h1 class="title">Order Confirmed</h1>
-          <p class="subtitle">We hope you enjoy your food!</p>
-        </div>
-    
-        <div class="order-items">
-          <div class="item">
-            <div class="item-image"></div>
-            <div class="item-details">
-              <h3 class="item-name">Classic Tiramisu</h3>
-              <span class="item-quantity">1× $5.50</span>
-            </div>
-            <span class="item-price">$5.50</span>
-          </div>
-        </div>
-    
-        <div class="total">
-          <span>Order Total</span>
-          <span>$46.50</span>
-        </div>
-    
-        <button class="new-order-btn">Start New Order</button>
-      </div>
+      <!-- Confirmacion de la lista del carrito -->
+      <div class="confirmacion" id="confirmacion-compra"></div>
     </div>
 
     <script src="main.js" type="module"></script>

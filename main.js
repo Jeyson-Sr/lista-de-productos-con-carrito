@@ -1,3 +1,6 @@
-import { Card } from "./js/Card.js";
+import { Cards } from "./js/Card.js";
+import { contendioDeCarrito } from "./js/Carrito.js";
+import { contenidoDeConfirma } from "./js/Confirmacion.js";
 
-Card();
+Cards();
+
